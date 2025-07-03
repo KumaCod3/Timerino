@@ -38,7 +38,7 @@ body {
 
 #timer-display {
     position: absolute;
-    top: 140px;
+    top: 65px;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0); /* Ancora trasparente */
@@ -55,15 +55,12 @@ body {
 
 #reset-button {
     position: absolute;
-    bottom: 50px;
+    bottom: 35px;
     left: 50%;
     transform: translateX(-50%);
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #d9534f;
     color: white;
     opacity: 0.8;
     transition: opacity 0.2s;
