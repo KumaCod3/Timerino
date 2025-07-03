@@ -1,0 +1,76 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+#stopwatch-container {
+    position: relative; /* Necessario per posizionare gli elementi interni */
+    width: 1200px;      /* Larghezza della tua GIF */
+    height: 858px;      /* Altezza della tua GIF */
+    border: 3px solid #333;
+    border-radius: 10px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; /* Nasconde parti degli elementi interni che escono dai bordi */
+    user-select: none; /* Impedisce la selezione del testo al doppio click */
+}
+
+/* Stato di Pausa: mostra un'immagine statica */
+#stopwatch-container.paused {
+    background-image: url('Candele.png'); /* SOSTITUISCI CON LA TUA IMMAGINE STATICA */
+}
+
+/* Stato di Play: mostra la GIF animata */
+#stopwatch-container.playing {
+    background-image: url('Candele.gif'); /* SOSTITUISCI CON LA TUA GIF */
+}
+
+#timer-display {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0); /* Ancora trasparente */
+    color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+    /* --- MODIFICHE QUI --- */
+    font-size: 5.5em; /* Aumenta la dimensione del font */
+    font-family: 'Cinzel Decorative', serif; /* Nuovo font in stile antico */
+    font-weight: bold; /* Rende il testo in grassetto */
+    /* --- FINE MODIFICHE --- */
+    text-shadow: 2px 2px 6px black; /* Aumenta leggermente l'ombra per migliore leggibilità */
+}
+
+#reset-button {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #d9534f;
+    color: white;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+#reset-button:hover {
+    opacity: 1;
+}
