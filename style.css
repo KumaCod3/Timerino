@@ -17,10 +17,8 @@ body {
 
 #stopwatch-container {
     position: relative; /* Necessario per posizionare gli elementi interni */
-    width: 1200px;      /* Larghezza della tua GIF */
-    height: 858px;      /* Altezza della tua GIF */
-    border: 3px solid #333;
-    border-radius: 10px;
+    width: 400px;      /* Larghezza della tua GIF */
+    height: 290px;      /* Altezza della tua GIF */
     cursor: pointer;
     background-size: cover;
     background-position: center;
@@ -48,7 +46,7 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     /* --- MODIFICHE QUI --- */
-    font-size: 5.5em; /* Aumenta la dimensione del font */
+    font-size: 2.5em; /* Aumenta la dimensione del font */
     font-family: 'Cinzel Decorative', serif; /* Nuovo font in stile antico */
     font-weight: bold; /* Rende il testo in grassetto */
     /* --- FINE MODIFICHE --- */
