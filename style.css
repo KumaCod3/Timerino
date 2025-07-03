@@ -38,7 +38,7 @@ body {
 
 #timer-display {
     position: absolute;
-    top: 65px;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0); /* Ancora trasparente */
@@ -55,16 +55,28 @@ body {
 
 #reset-button {
     position: absolute;
-    bottom: 35px;
-    left: 50%;
+    bottom: 30%;
+    right: 9%;
     transform: translateX(-50%);
-    padding: 10px 20px;
-    font-size: 1em;
     cursor: pointer;
-    color: white;
+    
+    /* --- NUOVE REGOLE PER L'IMMAGINE --- */
+    background-image: url('rotate.png'); /* Inserisci qui il nome del tuo file PNG */
+    width: 20px;  /* Imposta la larghezza desiderata per l'immagine */
+    height: 20px; /* Imposta l'altezza desiderata per l'immagine */
+    background-size: contain; /* Fa in modo che l'immagine si adatti alle dimensioni */
+    background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+    background-color: transparent; /* Sfondo trasparente */
+    border: none; /* Nessun bordo */
+    
+    /* Rimuovi il testo (se presente nel tag HTML) e le proprietà non più necessarie */
+    font-size: 0;
+    color: orange;
+
     opacity: 0.8;
     transition: opacity 0.2s;
 }
+
 
 #reset-button:hover {
     opacity: 1;
